@@ -199,6 +199,7 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
+    /// Эспрессо с молоком, сахаром и сиропом
     Beverage* drink = new Espresso();
     drink = new Milk(drink);
     drink = new Sugar(drink);
@@ -208,6 +209,7 @@ int main()
         << " стоит $"
         << drink->cost() << endl;
 
+    /// Чай с молоком и сахаром
     Beverage* drink1 = new Tea();
     drink1 = new Milk(drink1);
     drink1 = new Sugar(drink1);
